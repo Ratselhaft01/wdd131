@@ -1,0 +1,43 @@
+body {
+    max-width: 600px;
+    line-height: 1.5;
+    padding: 30px 110px;
+    text-align: center;
+    margin: 35px 30px;
+    border-style: groove;
+}
+
+.title {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.title h1 {
+    margin-bottom: 5px;
+}
+
+.title h2 {
+    color: #006EB6;
+    font-size: 12px;
+    border-bottom-style: inset;
+    margin: 0;
+}
+
+.mission-list, p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.mission-list {
+    padding-left: 25px;
+}
+
+.mission-list li {
+    padding-bottom: 10px;
+}
+
+.logo {
+    /* height: 150px; */
+    width: 150px;
+}
