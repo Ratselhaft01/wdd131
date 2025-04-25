@@ -1,16 +1,17 @@
 body {
     max-width: 600px;
     line-height: 1.5;
-    padding: 30px 110px;
+    padding: 30px 16%;
     text-align: center;
-    margin: 35px 30px;
+    margin: 30px 5%;
     border-style: groove;
+    font-weight: bold;
 }
 
 .title {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .title h1 {
@@ -26,11 +27,7 @@ body {
 
 .mission-list, p {
     text-align: left;
-    font-size: 14px;
-}
-
-.mission-list {
-    padding-left: 25px;
+    /* font-size: 14px; */
 }
 
 .mission-list li {
