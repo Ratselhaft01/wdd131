@@ -36,11 +36,7 @@ img {
     max-width: 100%;
 }
 
-@media screen and (min-width: 600px) {
-    header h2 {
-        margin: 2rem;
-    }
-    
+@media screen and (min-width: 600px) {   
     menu {
         display: none;
     }
@@ -52,7 +48,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) { 
-    header h2 {
+    header h3 {
         display: none;
     }
 
