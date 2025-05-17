@@ -12,12 +12,17 @@ header, footer {
 
 main {
     padding: .5rem;
-    background-color: white;
+    background-color:rgb(229, 228, 228);
 }
 
-h1, h3 {
+h1 {
     margin: 1rem 0 0 0;
     padding: 0 2rem;
+}
+
+h3 {
+    margin: 1rem 0 0 0;
+    padding: 0 2rem 1rem 2rem;
 }
 
 menu {
@@ -36,18 +41,36 @@ img {
     max-width: 100%;
 }
 
-@media screen and (min-width: 600px) {   
-    menu {
-        display: none;
-    }
+.hide {
+    display: none;
+}
 
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    margin: 0 auto;
+    padding-top: 20vh;
+}
+
+dialog img {
+    max-height: 100%;
+    /* padding-top: 50%; */
+}
+
+.close-viewer {
+    position: absolute;
+    top:20vh;
+}
+
+@media screen and (min-width: 600px) {   
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (min-width: 1024px) { 
+@media screen and (min-width: 1000px) { 
     header h3 {
         display: none;
     }
