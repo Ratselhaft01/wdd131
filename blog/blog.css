@@ -14,7 +14,7 @@ ul {
 }
 
 nav {
-    border-width: 1px 0 1px 0;
+    border-width: 2px 0 2px 0;
     border-style: solid;
     border-color: #EFC69B;
 }
@@ -37,6 +37,7 @@ h1, h2 {
 
 h2 {
     color: #AF1B3F;
+
 }
 
 a {
@@ -58,4 +59,36 @@ a {
 .book {
     display: grid;
     grid-template-columns: 2fr 5fr;
+    padding: 2rem 0 0 0;
+}
+
+.book div {
+    padding: 0 15px;
+}
+
+.book p, h2, img {
+    margin: 0 0 15px 0;
+}
+
+.book img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.book div:first-child {
+    text-align: right;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #EFC69B;
+}
+
+.book div:first-child p:first-child {
+    font-size: large;
+}
+
+#filter {
+    border: #EFC69B 2px solid;
+    margin: 2rem 3rem;
 }
