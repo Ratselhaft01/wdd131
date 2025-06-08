@@ -1,0 +1,95 @@
+body {
+    position: relative;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#creditCardForm {
+    display: grid;
+    grid-template-columns: 120px 310px 120px;
+    grid-template-rows: 30px 220px 30px 30px;
+    gap: 20px;
+}
+
+#cardFront, #cardBack {
+    background-color: #dbdbdb;
+    width: 390px;
+    height: 250px;
+    padding: 20px 30px 0;
+    border-radius: 10px;
+}
+
+#cardFront {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    z-index: 2;
+    box-shadow: 5px 5px #b5b5b5b7;
+}
+
+#cardBack {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    z-index: 1;
+}
+
+input {
+    height: 30px;
+    margin: 0 0 25px;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.card-image {
+    justify-self: right;
+}
+
+#cardNumContainer {
+    grid-column: span 2;
+    width: 100%;
+}
+
+#cardNum {
+    width: 100%;
+}
+
+/* #nameContainer {
+    grid-column: 1;
+} */
+
+#month, #year {
+    width: 45%;
+}
+
+#strip {
+    background-color: #272727;
+    height: 55px;
+    width: 100%;
+    grid-column: span 2;
+}
+
+#cvcContainer {
+    grid-column: 2;
+    text-align: right;
+}
+
+#cvc {
+    width: 60px;
+    margin: 0;
+}
+
+button {
+  background-color: #e2e2e2cc;
+  width: 100px;
+  border-radius: 8px;
+  height: 42px;
+  font-weight: bold;
+  cursor: pointer;
+  grid-column: 3;
+  grid-row: 4;
+}
