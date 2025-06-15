@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: "Merienda";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+    margin: auto;
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+#title {
+    margin: 0;
+    align-self: flex-end;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--secondary-font);
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+#searchForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
+#searchForm input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchForm img {
+    max-width: 40px;
+    padding: 5px;
+    border-left: 1px solid black;
+}
+
+.line {
+    border-bottom: 1px solid grey;
+    margin: 1em 0;
+}
+
+.recipe {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.recipeInfo {
+    align-self: flex-start;
+}
+
+.mealType {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 0;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.recipeName {
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.recipeName:hover {
+    color: var(--secondary-color);
+}
+
+.rating {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.description {
+    display: none;
+}
+
+footer {
+    justify-items: center;
+    margin-top: 2em;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.social img {
+    width: 50px;
+}
+
+footer a {
+    font-size: 0.6em;
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+@media screen and (min-width: 600px) {
+    .recipe {
+        flex-direction: row;
+    }
+
+    .recipeImage {
+        flex: 0 1 400px;
+        margin-right: 1em;
+    }
+
+    .recipeInfo {
+        flex: 0 1 50ch;
+    }
+
+    .description {
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    footer a {
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        width: 960px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Porter Oleson">
+    <meta property="og:title" content="Page Title">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Page Description">
+    <meta property="og:image" content="URL to an image">
+    <meta property="og:url" content="URL of the page">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="recipes.css">
+    <script src="main.js" defer></script>
+    <title>RecipeBook</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/recipe-book.png" alt="Recipe Book logo.">
+        <h1 id="title">RecipeBook</h1>
+    </header>
+    <main>
+        <div id="searchForm">
+            <input id="searchBar" name="searchBar" placeholder="Find a recipe">
+            <img src="images/search.svg" alt="Magnifying glass.">
+        </div>
+        <div class="line"></div>
+        <div class="recipeSection">
+            <div class="recipe">
+                <div class="recipeImage">
+                    <img src="images/apple-crisp.jpg" alt="A bowl with apple crisp pie with ice cream on top.">
+                </div>
+                <div class="recipeInfo">
+                    <p class="mealType">dessert</p>
+                    <h2 class="recipeName">Apple Crisp</h3>
+                    <span
+                        class="rating"
+                        role="img"
+                        aria-label="Rating: 4 out of 5 stars"
+                        >
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p class="description">This apple crisp recipe yum!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </footer>
+</body>
+</html>
