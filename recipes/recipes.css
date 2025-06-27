@@ -161,6 +161,10 @@ footer a:hover {
     footer a {
         align-self: center;
     }
+
+    img {
+        max-width: 450px;
+    }
 }
 
 @media screen and (min-width: 960px) {
