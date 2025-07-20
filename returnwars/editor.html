@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Return Wars</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rationale&family=Roboto&display=swap" rel="stylesheet">
+  <script src="javascript/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Return Wars Story Editor</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="stories.html">Stories</a>
+            <a href="editor.html">Story Editor</a>
+            <button id="toggle-mode">Toggle Light/Dark Mode</button>
+        </nav>
+    </header>
+  <form id="story-form">
+    <input type="text" placeholder="ID" id="id" required>
+    <input type="text" placeholder="Title" id="title" required>
+    <input type="text" placeholder="Excerpt" id="excerpt" required>
+    <textarea placeholder="Full Content" id="content" required></textarea>
+    <input type="text" placeholder="Faction" id="faction">
+    <input type="text" placeholder="Type/Genre" id="type">
+    <button type="submit">Add Story</button>
+  </form>
+
+  <pre id="output"></pre>
+
+  <script>
+    const form = document.getElementById('story-form');
+    const output = document.getElementById('output');
+    let stories = [];
+
+    fetch('stories.json')
+      .then(res => res.json())
+      .then(data => stories = data);
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const newStory = {
+        id: id.value.trim(),
+        title: title.value.trim(),
+        excerpt: excerpt.value.trim(),
+        content: content.value.trim(),
+        faction: faction.value.trim(),
+        type: type.value.trim(),
+        link: `story.html?id=${id.value.trim()}`
+      };
+      stories.push(newStory);
+      output.textContent = JSON.stringify(stories, null, 2);
+    });
+  </script>
+</body>
+</html>

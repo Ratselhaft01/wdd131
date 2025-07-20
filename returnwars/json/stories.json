@@ -1,0 +1,29 @@
+[
+  {
+    "id": "rift",
+    "title": "Echoes of the Rift",
+    "excerpt": "Voices from another world begin to call.",
+    "content": "Long-form story text goes here...",
+    "faction": "Arcanists",
+    "type": "Mystery",
+    "link": "story.html?id=rift"
+  },
+  {
+    "id": "nova",
+    "title": "Callsign: Nova",
+    "excerpt": "A pilot with a past. A galaxy with a future.",
+    "content": "Nova’s cockpit lit up as the warning sensors screamed...",
+    "faction": "United Peoples",
+    "type": "Exploration",
+    "link": "story.html?id=nova"
+  },
+  {
+    "id": "outpost",
+    "title": "Outpost 7",
+    "excerpt": "A lonely watch station on the edge of charted space.",
+    "content": "Outpost 7 was built to be forgotten...",
+    "faction": "The Bureau",
+    "type": "Survival",
+    "link": "story.html?id=outpost"
+  }
+]

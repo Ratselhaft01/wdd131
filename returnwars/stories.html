@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Return Wars</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rationale&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>All Return Wars Stories</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="stories.html">Stories</a>
+        <a href="editor.html">Story Editor</a>
+        <button id="toggle-mode">Toggle Light/Dark Mode</button>
+    </nav>
+  </header>
+  
+  <input type="text" id="search" placeholder="Search stories...">
+  <select id="faction-filter">
+    <option value="">All Factions</option>
+  </select>
+
+  <main id="all-stories"></main>
+
+  <script src="javascript/script.js" defer></script>
+</body>
+</html>

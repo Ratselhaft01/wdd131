@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rationale&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #14151f;
+  --secondary-color: #c0b7b1;
+  --accent1-color: #049a8f;
+  --accent2-color: #116466;
+
+  --heading-font: 'Rationale', sans-serif;
+  --paragraph-font: 'Roboto', sans-serif;
+
+  --bg: var(--primary-color);
+  --text: var(--secondary-color);
+  --card: #1f212e;
+}
+
+body.light {
+  --bg: #ffffff;
+  --text: #14151f;
+  --card: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  font-family: var(--paragraph-font);
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-weight: bold;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-weight: bold;
+}
+
+button {
+  background-color: var(--accent2-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: var(--accent1-color);
+}
+
+.hero, .random-picks, .featured, .recommend {
+  margin: 2rem 0;
+}
+
+.story-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.story-list.horizontal {
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.story-card {
+  background-color: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 180px;
+  color: var(--text);
+  transition: transform 0.2s;
+}
+.story-card:hover {
+  transform: scale(1.02);
+  border-left: 3px solid var(--accent1-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: var(--card);
+  border: 1px solid var(--accent2-color);
+  color: var(--text);
+}
